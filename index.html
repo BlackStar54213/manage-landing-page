@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Manage landing page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav>
+
+      <div class="logo" id="logo"><img src="images/logo.svg" alt=""></div>
+      <div class="linker" id="linker">
+        <div id="linkertab">
+          <div class="logo" id="linklogo"><img src="images/logo.svg" alt=""></div>
+          <img src="images/icon-close.svg" id="close" onclick="closeMenu()" alt="">
+        </div>
+        <div class="links" id="linktab">
+          <a href="">Pricing</a>
+          <a href="">Product</a>
+          <a href="">About Us</a>
+          <a href="">Careers</a>
+          <a href="">Community</a>
+        </div>
+      </div>
+      <button class="nav-btn">Get Started</button>
+      <img src="images/icon-hamburger.svg" alt="" id="menu" onclick="openMenu()">
+
+
+    </nav>
+    <header>
+      <div class="text">
+        <h1>Bring everyone together to build better products.</h1>
+        <p>Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.</p>
+        <button class="text-btn">Get Started</button>
+      </div>
+      <img src="images/illustration-intro.svg" alt="" id="desktop">
+    </header>
+    <main>
+      <section class="top">
+        <div class="left">
+          <h2>What’s different about Manage?</h2>
+          <p>Manage provides all the functionality your team needs, without
+            the complexity. Our software is tailor-made for modern digital
+            product teams.</p>
+        </div>
+        <div class="right">
+          <div class="sets">
+
+            <h3><span>01</span>Track company-wide progress</h3>
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.</p>
+          </div>
+
+
+          <div class="sets">
+
+            <h3> <span>02</span>Advanced built-in reports</h3>
+            <p>Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.</p>
+          </div>
+
+
+          <div class="sets">
+
+            <h3> <span>03</span>Everything you need in one place</h3>
+            <p>Stop jumping from one service to another to communicate, store files,
+              track tasks and share documents. Manage offers an all-in-one team
+              productivity solution.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-container">
+        <h2>What they’ve said</h2>
+        <div class="slide">
+          <div class="container">
+            <div class="contain">
+              <img src="images/avatar-anisha.png" alt="">
+              <h4>Anisha Li</h4>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to maintain
+                visibility on larger milestones at all times keeps everyone motivated.”
+              </p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="contain">
+              <img src="images/avatar-ali.png" alt="">
+              <h4>Ali Bravo</h4>
+              <p>
+                “We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”
+              </p>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="contain">
+              <img src="images/avatar-richard.png" alt="">
+              <h4>Richard Watts</h4>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”
+              </p>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="contain">
+              <img src="images/avatar-shanai.png" alt="">
+              <h4>Shanai Gough</h4>
+              <p>
+                “Their software allows us to track, manage and collaborate on our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <button class="slide-btn">Get Started</button>
+      </section>
+
+
+    </main>
+    <footer>
+      <section class="up">
+        <h3>Simplify how your team works today.</h3>
+        <button>Get Started</button>
+      </section>
+      <section class="bottom">
+        <div class="footlogo">
+          <img src="images/logo.svg" alt="">
+          <div class="media">
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-youtube.svg" alt="">
+            <img src="images/icon-twitter.svg" alt="">
+            <img src="images/icon-pinterest.svg" alt="">
+            <img src="images/icon-instagram.svg" alt="">
+          </div>
+        </div>
+        <div class="forwardlinks">
+          <ul>
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>Products</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div class="carer">
+          <ul>
+            <li>Careers</li>
+            <li>Community</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="news">
+          <form action="">
+            <input type="email" required autocomplete="email" placeholder="Updates in your inbox…">
+            <button class="foot-btn">Go</button><br>
+
+          </form>
+          <p id="copy">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Desmond Izu</a>.
+      </div>
+    </footer>
+
+
+
+  </body>
+  <script src="index.js"></script>
+
+</html>
